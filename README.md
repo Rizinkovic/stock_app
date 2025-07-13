@@ -1,0 +1,1 @@
+Tried to make a web version of the stock app available on iOS using html, css, javascript and some free api like that of CoinGecko (for real-time cryto prices). This is just a prototype as I'm still working on a more advannced version.
