@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockWatch - Currencies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-chart-line"></i>
+            <span>StockWatch</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="crypto.html">Crypto</a></li>
+                <li class="active"><a href="currencies.html">Currencies</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="currency-converter">
+            <h1>Currency Converter</h1>
+            <div class="converter-container">
+                <div class="converter-form">
+                    <div class="input-group">
+                        <input type="number" id="amount" value="1" min="0">
+                        <select id="from-currency">
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                            <option value="XAF">XAF - CFA Franc</option>
+                            <option value="NGN">NGN - Nigerian Naira</option>
+                            <!-- More currencies will be added by JS -->
+                        </select>
+                    </div>
+                    <div class="swap-btn">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" id="result" readonly>
+                        <select id="to-currency">
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                            <option value="XAF">XAF - CFA Franc</option>
+                            <option value="NGN">NGN - Nigerian Naira</option>
+                            <!-- More currencies will be added by JS -->
+                        </select>
+                    </div>
+                    <button id="convert-btn">Convert</button>
+                </div>
+                <div id="currency-chart" class="chart-container"></div>
+            </div>
+        </section>
+
+        <section class="exchange-rates">
+            <h2>Current Exchange Rates</h2>
+            <div id="rates-table" class="rates-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>StockWatch</h3>
+                <p>Your comprehensive market tracking solution</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Subscribe</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 StockWatch. Developed by Rizinkovic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/currencies.js"></script>
+</body>
+</html>
